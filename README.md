@@ -7,7 +7,7 @@ This action installs [Binary Ninja] for testing and building both native and pyt
 When using this action it should be noted that the license input should basically always be a secret.
 
 ```yaml
-uses: emesare/setup-binary-ninja
+uses: emesare/setup-binary-ninja@v1-beta
 with:
   license: '${{ secrets.BN_SERIAL }}'
 ```
