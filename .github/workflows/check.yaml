@@ -1,0 +1,21 @@
+on: push
+
+jobs:
+  python:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    name: Python support on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+      - run: python --version
+      - name: Set up Binary Ninja
+        uses: ./ # Uses action in the root directory
+        id: setup-binja
+        with:
+          license: '${{ secrets.BN_SERIAL }}'
+      - name: Get Binary Ninja package version
+        run: python -c "from binaryninja import *; print(core_version())"

@@ -1,0 +1,22 @@
+name: 'Setup Binary Ninja environment'
+description: 'TODO'
+inputs:
+  license:
+    description: 'Binary Ninja serial number, must specify unless download url is overrided'
+  extract-path:
+    description: "Where to extract Binary Ninja"
+    default: "${{ runner.temp }}"
+  download-url:
+    description: "Override download url"
+  dev-branch:
+    default: false
+    description: "Use developer branch of Binary Ninja"
+  python-support:
+    default: true
+    description: "Support running binary ninja python scripts"
+outputs:
+  install-path:
+    description: "Where Binary Ninja was installed"
+runs:
+  using: "node16"
+  main: "dist/index.js"
