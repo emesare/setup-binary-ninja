@@ -12,6 +12,10 @@ with:
   license: '${{ secrets.BN_SERIAL }}'
 ```
 
+## Example workflows
+
+- [binja-msvc](https://github.com/emesare/binja-msvc/actions/runs/5149259751/jobs/9272034289)
+
 ## Inputs
 
 ### `license`
