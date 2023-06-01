@@ -1,5 +1,9 @@
 name: 'Setup Binary Ninja environment'
 description: 'Setup Binary Ninja within your github actions runner'
+author: 'emesare'
+branding:
+  icon: 'bold'
+  color: 'red'
 inputs:
   license:
     description: 'Binary Ninja serial number, must specify unless download url is overrided'
