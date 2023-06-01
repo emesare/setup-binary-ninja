@@ -1,6 +1,6 @@
 # Setup Binary Ninja action
 
-This action installs [Binary Ninja] for testing and building both native and python plugins within Github CI.
+This action installs [Binary Ninja] for testing and building both native and python plugins within Github CI. NOTE: This only supports Linux, if you want to run on windows or mac runners you will need to manually create a headless version of [Binary NInja] and pass in the `download-url`.
 
 ## Example usage
 

@@ -2,10 +2,7 @@ on: push
 
 jobs:
   python:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ubuntu-latest
     name: Python support on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
