@@ -1,5 +1,5 @@
 name: 'Setup Binary Ninja environment'
-description: 'TODO'
+description: 'Setup Binary Ninja within your github actions runner'
 inputs:
   license:
     description: 'Binary Ninja serial number, must specify unless download url is overrided'
