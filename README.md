@@ -36,7 +36,7 @@ Whether or not to use the developer branch of [Binary Ninja]. Default is `false`
 
 ### `python-support`
 
-Whether or not to expose [Binary Ninja] to the runners python installation, i.e. the ability to `import binaryninja` in python. Default is `true`.
+Whether or not to expose [Binary Ninja] to the runners python installation, i.e. the ability to `import binaryninja` in python. Make sure you have setup python **before** this action is run. Default is `true`.
 
 ## Outputs
 
