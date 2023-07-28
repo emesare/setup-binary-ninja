@@ -60,7 +60,7 @@ act push -s BN_SERIAL=yourserial -P ubuntu-latest=catthehacker/ubuntu:act-latest
 
 ### Commiting
 
-Oddly enough github actions requires the distributed bundle to be in-tree, when commiting changes insure that the bundle you have built is up-to-date with any changes made to the source.
+Oddly enough github actions requires the distributed bundle to be in-tree, when commiting changes ensure that the bundle you have built is up-to-date with any changes made to the source.
 
 [Binary Ninja]: https://binary.ninja
 [act]: https://github.com/nektos/act
